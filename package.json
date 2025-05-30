@@ -1,18 +1,26 @@
 {
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.7",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.1.7",
-    "vite": "^6.3.5"
-  },
+  "name": "portfolio2025",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "react-router-dom": "^7.6.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelina-lapin/portfolio2025.git"
   },
-  "type": "module"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/angelina-lapin/portfolio2025/issues"
+  },
+  "homepage": "https://github.com/angelina-lapin/portfolio2025#readme",
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
 }
