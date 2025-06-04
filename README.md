@@ -66,7 +66,7 @@ This project helped me practice:
 
 ---
 
-## 🛠️ Future Improvements
+## Future Improvements
 
 - Add animations with IntersectionObserver
 - Enhance accessibility (ARIA labels, keyboard nav)
@@ -74,7 +74,7 @@ This project helped me practice:
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Angelina Lapin**  
 Frontend Developer & Creative Coder  
