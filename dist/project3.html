@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Frameworks - Angelina Lapin Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" crossorigin href="/assets/styles-BlvfKeWv.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact me</a>
+      </nav>
+    </header>
+
+    <main class="section">
+      <div class="project-header">
+        <h2>JavaScript Frameworks: Auction Place</h2>
+        <div class="share-section">
+          <button id="copyLinkButton" class="share-button">
+            <i class="fas fa-share-alt"></i>
+            <span class="tooltip">Copy Link</span>
+          </button>
+        </div>
+      </div>
+
+      <figure>
+        <img
+          src="./assets/project3.png"
+          alt="Screenshot of Auction Place"
+          class="article-image"
+        />
+        <figcaption>Auction Place - Interactive Auction Site</figcaption>
+      </figure>
+
+      <h2>Project Links</h2>
+      <p>
+        <a
+          href="https://auctionplacehere.netlify.app"
+          target="_blank"
+          class="button"
+          >Live Site</a
+        >
+        <a
+          href="https://github.com/angelina-lapin/exam-winter2024"
+          target="_blank"
+          class="button"
+          >GitHub Repository</a
+        >
+      </p>
+
+      <h2>Project Description</h2>
+      <p>
+        Auction Place is an interactive online auction platform allowing users
+        to create, browse, and bid on listings in real time. The project
+        features dynamic state handling, RESTful API connections, and responsive
+        design to ensure a smooth user experience.
+      </p>
+
+      <h2>Reflections & Improvements</h2>
+      <ul>
+        <li>
+          Added comprehensive form validation to ensure all user inputs are
+          checked for correctness and completeness before submission, improving
+          both security and user experience.
+        </li>
+        <li>
+          Implemented consistent loading states across all major API
+          interactions, providing clear visual feedback while data is being
+          fetched or submitted.
+        </li>
+        <li>
+          Improved error handling by displaying user-friendly error messages and
+          replacing generic alerts with styled toast notifications for better
+          UX.
+        </li>
+        <li>
+          Refactored the code to remove leftover
+          <code>console.log</code> statements and ensured cleaner,
+          production-ready code.
+        </li>
+        <li>
+          Enhanced the project's maintainability by adding clear comments and
+          improving documentation across key modules.
+        </li>
+      </ul>
+    </main>
+
+    <footer>
+      <a href="index.html">← Back to Home</a>
+      <br />
+      © 2025 Angelina Lapin
+    </footer>
+
+    <script>
+      const copyButton = document.getElementById("copyLinkButton");
+
+      copyButton.addEventListener("click", () => {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+          copyButton.classList.add("show-tooltip");
+          copyButton.querySelector(".tooltip").textContent = "Link Copied!";
+          setTimeout(() => {
+            copyButton.classList.remove("show-tooltip");
+            copyButton.querySelector(".tooltip").textContent = "Copy Link";
+          }, 2000);
+        });
+      });
+    </script>
+  </body>
+</html>
