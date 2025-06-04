@@ -34,7 +34,7 @@ src/
 ├── css/
 │   └── styles.css         # Global styles
 ├── assets/
-│   ├── angelina.png       # My profile photo
+│   ├── angelina.jpg       # My profile photo
 │   └── project*.png       # Screenshots for each project
 └── js/
     └── scripts.js            # Script for share button animation
